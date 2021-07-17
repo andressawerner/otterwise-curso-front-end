@@ -1,0 +1,15 @@
+{
+  "name": "ex_aula_21",
+  "version": "1.0.0",
+  "description": "Exercícios referentes à aula 21.",
+  "main": "index.js",
+  "author": "Andressa Werner",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules index.js"
+  },
+  "dependencies": {
+    "date-fns": "^2.22.1"
+  }
+}
