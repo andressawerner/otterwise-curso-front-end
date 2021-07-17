@@ -1,0 +1,24 @@
+{
+  "clients": [
+    { "id": 1, "name": "Érico" },
+    { "id": 2, "name": "Juca" },
+    { "id": 3, "name": "Juquinha" },
+    { "id": 4, "name": "Jucão" },
+    { "id": 5, "name": "Juliano" },
+    { "id": 6, "name": "Juliana" }
+  ],
+  "purchases": [
+    { "client_id": 1, "data": "11/04/2021", "total": 100.0 },
+    { "client_id": 2, "data": "11/03/2021", "total": 83.71 },
+    { "client_id": 2, "data": "08/02/2021", "total": 52.48 },
+    { "client_id": 1, "data": "20/04/2021", "total": 329.99 },
+    { "client_id": 3, "data": "11/04/2021", "total": 102.0 },
+    { "client_id": 4, "data": "18/05/2020", "total": 85.1 },
+    { "client_id": 5, "data": "14/07/2021", "total": 59.5 },
+    { "client_id": 5, "data": "20/04/2021", "total": 105.9 },
+    { "client_id": 3, "data": "11/04/2021", "total": 100.0 },
+    { "client_id": 2, "data": "12/02/2021", "total": 83.71 },
+    { "client_id": 1, "data": "18/02/2021", "total": 59.87 },
+    { "client_id": 4, "data": "16/05/2021", "total": 14.89 }
+  ]
+}
