@@ -1,0 +1,46 @@
+body {
+  background-color: antiquewhite;
+}
+
+footer {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+nav ul li {
+  margin: 20px 0px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 5px;
+  background-color: darkcyan;
+  text-align: center;
+}
+
+form {
+  width: 380px;
+}
+
+form input {
+  margin: 15px 0px;
+}
+
+.title {
+  line-height: 18px;
+  font-weight: 14px;
+  color: darkcyan;
+}
+
+#section-form {
+  padding: 20px;
+  background-color: darkgray;
+}
+
+#button-enviar {
+  width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: darkcyan;
+  color: white;
+}
