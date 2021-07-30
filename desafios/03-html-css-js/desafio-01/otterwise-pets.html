@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Repositório de fotos de Pets da Otterwise."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Otterwise - Pets</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <header>
+      <img src="images/brand-logo.png" id="logo-otterwise-pets" />
+      <nav>
+        <ul id="topbar">
+          <li><a href="galery.html">GALERIA</a></li>
+          <li><a href="contact.html">CONTATO</a></li>
+          <li><a href="social.html">SOCIAL</a></li>
+        </ul>
+        <a href="#" id="topbar-mobile" onclick="myFunction(this)"> X </a>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <img src="images/dogs-banner.png" />
+        <div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>consectetur adipiscing elit. Proin nec lacus sem.</p>
+        </div>
+      </section>
+      <section id="gallery">
+        <div>
+          <img src="images/gallery/dog_1.png" />
+          <img src="images/gallery/cat_1.png" />
+          <img src="images/gallery/dog_2.png" />
+        </div>
+        <div>
+          <img src="images/gallery/cat_2.png" />
+          <img src="images/gallery/dog_3.png" />
+          <img src="images/gallery/cat_3.png" />
+        </div>
+      </section>
+      <section id="section-form">
+        <form>
+          <div>
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div>
+            <label for="message">Mensagem</label>
+            <textarea type="text" id="message" name="message"></textarea>
+          </div>
+          <button id="btn-submit" type="submit">ENVIAR</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Direitos Reservados. 2021</p>
+    </footer>
+  </body>
+</html>
