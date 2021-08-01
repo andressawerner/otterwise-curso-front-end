@@ -8,6 +8,18 @@
       name="description"
       content="Repositório de fotos de Pets da Otterwise."
     />
+    <script
+      defer
+      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\brands.js"
+    ></script>
+    <script
+      defer
+      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\solid.js"
+    ></script>
+    <script
+      defer
+      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\fontawesome.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -36,15 +48,30 @@
     <header>
       <img src="images/brand-logo.png" id="logo-otterwise-pets" />
       <nav>
-        <ul id="topbar">
-          <li><a href="galery.html">GALERIA</a></li>
-          <li><a href="contact.html">CONTATO</a></li>
-          <li><a href="social.html">SOCIAL</a></li>
+        <a href="#" id="topbar-mobile" onclick="openMenuMobile(this)">
+          <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <ul id="topbar-desktop">
+          <li><a href="#gallery">GALERIA</a></li>
+          <li><a href="#section-form">CONTATO</a></li>
+          <li><a href="#section-form">SOCIAL</a></li>
         </ul>
-        <a href="#" id="topbar-mobile" onclick="myFunction(this)"> X </a>
       </nav>
     </header>
     <main>
+      <section id="menu-mobile">
+        <ul>
+          <li>
+            <a href="#gallery" onclick="closeMenuMobile(this)">GALERIA</a>
+          </li>
+          <li>
+            <a href="#section-form" onclick="closeMenuMobile(this)">CONTATO</a>
+          </li>
+          <li>
+            <a href="#section-form" onclick="closeMenuMobile(this)">SOCIAL</a>
+          </li>
+        </ul>
+      </section>
       <section id="banner">
         <img src="images/dogs-banner.png" />
         <div>

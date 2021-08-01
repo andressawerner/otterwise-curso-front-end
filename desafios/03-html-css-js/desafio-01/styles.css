@@ -10,22 +10,23 @@ header {
   background-color: #040404;
 }
 
-#topbar-mobile {
+#topbar-mobile,
+#menu-mobile {
   display: none;
 }
 
-#topbar {
+#topbar-desktop {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   list-style-type: none;
 }
 
-#topbar li {
+#topbar-desktop li {
   padding: 0px 10px;
 }
 
-#topbar li a {
+#topbar-desktop li a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
@@ -35,24 +36,29 @@ header {
 }
 
 #logo-otterwise-pets {
-  padding-top: 11px;
-  padding-left: 96px;
+  padding-top: 1%;
+  padding-left: 3%;
 }
 
 #banner {
   display: flex;
-  padding: 0px 20px;
+  padding: 0px 62.5px;
   justify-content: space-around;
   align-items: center;
   background-color: #040404;
 }
 
-#banner * {
-  padding: 0px 20px;
+#banner img {
+  align-self: flex-end;
+  padding: 0px 32.5px;
+}
+
+#banner div {
+  padding: 0px 32.5px;
 }
 
 #gallery {
-  padding: 45px 90px;
+  padding: 2% 4%;
   background-color: #e6bc7e;
 }
 
@@ -65,7 +71,7 @@ header {
 }
 
 #gallery div img {
-  margin: 40px 45px;
+  margin: 40px 2%;
 }
 
 h1 {
@@ -138,6 +144,18 @@ textarea {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  padding: 8px 17px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #bf9d69;
 }
 
 input {
@@ -146,6 +164,7 @@ input {
 
 textarea {
   height: 80px;
+  display: inline-table;
 }
 
 #btn-submit {
@@ -153,6 +172,11 @@ textarea {
   color: #ffffff;
   padding: 10px;
   border-radius: 10px;
+  font-weight: bold;
+}
+
+#btn-submit:hover {
+  background: #403423;
 }
 
 footer {
@@ -175,58 +199,114 @@ footer p {
 }
 
 @media (max-width: 360px) {
+  #banner {
+    padding: 0;
+  }
+
+  #banner div {
+    padding: 80px 20px 60px 20px;
+  }
+
   #banner img {
     display: none;
   }
 
+  h1 {
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #bf9d69;
+
+    border: 1px solid #040404;
+  }
+
   header {
     max-height: 75px;
-    padding: 5px 0px;
+    padding: 11px 30px;
     justify-content: space-between;
   }
 
-  #gallery div {
-    flex-wrap: wrap;
+  header img {
+    width: 53px;
+    height: 53px;
   }
 
-  #topbar {
+  #gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: #bf9d69;
+  }
+
+  #gallery div {
+    flex-wrap: wrap-reverse;
+  }
+
+  #topbar-desktop {
     display: none;
   }
 
   #topbar-mobile {
-    display: block;
+    display: flex;
+    color: #bf9d69;
+    padding: 30px 10px;
+  }
+
+  #menu-mobile {
+    display: none;
+  }
+
+  #menu-mobile a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #ffd18d;
+  }
+
+  #menu-mobile ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 32.5px;
+    z-index: 100;
+  }
+
+  #menu-mobile li {
+    padding: 32.5px;
+  }
+
+  #menu-mobile.active {
+    display: flex;
+    width: 100%;
   }
 
   #logo-otterwise-pets {
     padding: 5px 0px;
   }
 
-  .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #bf9d69;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
-
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  .change .bar2 {
-    opacity: 0;
-  }
-
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  form {
+    margin: 43px 15px 38px 15px;
   }
 }

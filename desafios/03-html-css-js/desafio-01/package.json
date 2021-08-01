@@ -1,0 +1,11 @@
+{
+  "name": "desafio-01",
+  "version": "1.0.0",
+  "description": "Desafio 01 do módulo de HTML, CSS e JS para web",
+  "main": "main.js",
+  "author": "Andressa Werner",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}
