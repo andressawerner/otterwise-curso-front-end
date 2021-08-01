@@ -10,15 +10,15 @@
     />
     <script
       defer
-      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\brands.js"
+      src="node_modules\@fortawesome\fontawesome-free\js\brands.js"
     ></script>
     <script
       defer
-      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\solid.js"
+      src="node_modules\@fortawesome\fontawesome-free\js\solid.js"
     ></script>
     <script
       defer
-      src="C:\Users\awkpe\developer\otterwise\desafios\03-html-css-js\desafio-01\node_modules\@fortawesome\fontawesome-free\js\fontawesome.js"
+      src="node_modules\@fortawesome\fontawesome-free\js\fontawesome.js"
     ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -92,7 +92,7 @@
         </div>
       </section>
       <section id="section-form">
-        <form>
+        <form id="contact-form">
           <div>
             <label for="name">Nome completo</label>
             <input type="text" id="name" name="name" />
@@ -103,12 +103,13 @@
           </div>
           <div>
             <label for="phone">Telefone</label>
-            <input type="tel" id="phone" name="phone" />
+            <input type="text" id="phone" name="phone" />
           </div>
           <div>
             <label for="message">Mensagem</label>
             <textarea type="text" id="message" name="message"></textarea>
           </div>
+          <p id="response-contact-form" class="response-form"></p>
           <button id="btn-submit" type="submit">ENVIAR</button>
         </form>
       </section>

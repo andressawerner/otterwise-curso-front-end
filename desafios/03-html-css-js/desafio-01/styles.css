@@ -244,7 +244,7 @@ footer p {
 
   header img {
     width: 53px;
-    height: 53px;
+    height: 63px;
   }
 
   #gallery {
@@ -309,4 +309,20 @@ footer p {
   form {
     margin: 43px 15px 38px 15px;
   }
+}
+
+.response-form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #403423;
+  border: none;
+}
+
+input.error,
+textarea.error {
+  border-color: #ff0047ab;
 }
