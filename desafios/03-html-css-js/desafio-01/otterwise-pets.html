@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Repositório de fotos de Pets da Otterwise."
+    />
+    <script
+      defer
+      src="node_modules\@fortawesome\fontawesome-free\js\brands.js"
+    ></script>
+    <script
+      defer
+      src="node_modules\@fortawesome\fontawesome-free\js\solid.js"
+    ></script>
+    <script
+      defer
+      src="node_modules\@fortawesome\fontawesome-free\js\fontawesome.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Otterwise - Pets</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/brand-logo.png" id="logo-otterwise-pets" />
+      <nav>
+        <a href="#" id="topbar-mobile" onclick="openMenuMobile(this)">
+          <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <ul id="topbar-desktop">
+          <li><a href="#gallery">GALERIA</a></li>
+          <li><a href="#section-form">CONTATO</a></li>
+          <li><a href="#section-form">SOCIAL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu-mobile">
+        <ul>
+          <li>
+            <a href="#gallery" onclick="closeMenuMobile(this)">GALERIA</a>
+          </li>
+          <li>
+            <a href="#section-form" onclick="closeMenuMobile(this)">CONTATO</a>
+          </li>
+          <li>
+            <a href="#section-form" onclick="closeMenuMobile(this)">SOCIAL</a>
+          </li>
+        </ul>
+      </section>
+      <section id="banner">
+        <img src="images/dogs-banner.png" />
+        <div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>consectetur adipiscing elit. Proin nec lacus sem.</p>
+        </div>
+      </section>
+      <section id="gallery">
+        <div>
+          <img src="images/gallery/dog_1.png" />
+          <img src="images/gallery/cat_1.png" />
+          <img src="images/gallery/dog_2.png" />
+        </div>
+        <div>
+          <img src="images/gallery/cat_2.png" />
+          <img src="images/gallery/dog_3.png" />
+          <img src="images/gallery/cat_3.png" />
+        </div>
+      </section>
+      <section id="section-form">
+        <form id="contact-form">
+          <div>
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="phone">Telefone</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+          <div>
+            <label for="message">Mensagem</label>
+            <textarea type="text" id="message" name="message"></textarea>
+          </div>
+          <p id="response-contact-form" class="response-form"></p>
+          <button id="btn-submit" type="submit">ENVIAR</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Direitos Reservados. 2021</p>
+    </footer>
+  </body>
+</html>
